@@ -1,0 +1,170 @@
+{
+  "@context" : {
+    "isSister" : {
+      "@id" : "http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isSister",
+      "@type" : "@id"
+    },
+    "Dog" : {
+      "@id" : "http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Dog"
+    },
+    "hasSibling" : {
+      "@id" : "http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasSibling",
+      "@type" : "@id"
+    },
+    "Fish" : {
+      "@id" : "http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Fish"
+    },
+    "hasFirstAppearanceIn" : {
+      "@id" : "http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasFirstAppearanceIn",
+      "@type" : "@id"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "isGrandChild" : {
+      "@id" : "http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isGrandChild",
+      "@type" : "@id"
+    },
+    "VoiceActor" : {
+      "@id" : "http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#VoiceActor"
+    },
+    "Director" : {
+      "@id" : "http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Director"
+    },
+    "AdultWoman" : {
+      "@id" : "http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#AdultWoman"
+    },
+    "hasWriter" : {
+      "@id" : "http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasWriter",
+      "@type" : "@id"
+    },
+    "OldMan" : {
+      "@id" : "http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#OldMan"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Human" : {
+      "@id" : "http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Human"
+    },
+    "Character" : {
+      "@id" : "http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Character"
+    },
+    "isFather" : {
+      "@id" : "http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isFather",
+      "@type" : "@id"
+    },
+    "hasVoiceActor" : {
+      "@id" : "http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasVoiceActor",
+      "@type" : "@id"
+    },
+    "Episode" : {
+      "@id" : "http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Episode"
+    },
+    "Animal" : {
+      "@id" : "http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Animal"
+    },
+    "isWriterOf" : {
+      "@id" : "http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isWriterOf",
+      "@type" : "@id"
+    },
+    "Person" : {
+      "@id" : "http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Person"
+    },
+    "Writer" : {
+      "@id" : "http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Writer"
+    },
+    "hasAge" : {
+      "@id" : "http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasAge",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "isMemberOfFamily" : {
+      "@id" : "http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isMemberOfFamily",
+      "@type" : "@id"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "isDirectorOf" : {
+      "@id" : "http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isDirectorOf",
+      "@type" : "@id"
+    },
+    "hasMember" : {
+      "@id" : "http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasMember",
+      "@type" : "@id"
+    },
+    "Male" : {
+      "@id" : "http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Male"
+    },
+    "Family" : {
+      "@id" : "http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Family"
+    },
+    "hasBrother" : {
+      "@id" : "http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasBrother",
+      "@type" : "@id"
+    },
+    "AdultMan" : {
+      "@id" : "http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#AdultMan"
+    },
+    "isChild" : {
+      "@id" : "http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isChild",
+      "@type" : "@id"
+    },
+    "hasSister" : {
+      "@id" : "http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasSister",
+      "@type" : "@id"
+    },
+    "Girl" : {
+      "@id" : "http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Girl"
+    },
+    "Female" : {
+      "@id" : "http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Female"
+    },
+    "hasHeight" : {
+      "@id" : "http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasHeight",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "isGrandFather" : {
+      "@id" : "http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isGrandFather",
+      "@type" : "@id"
+    },
+    "OldWoman" : {
+      "@id" : "http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#OldWoman"
+    },
+    "isVoiceActorOf" : {
+      "@id" : "http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isVoiceActorOf",
+      "@type" : "@id"
+    },
+    "terms" : {
+      "@id" : "http://purl.org/dc/terms/terms"
+    },
+    "Boy" : {
+      "@id" : "http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Boy"
+    },
+    "hasDirector" : {
+      "@id" : "http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasDirector",
+      "@type" : "@id"
+    },
+    "isFirstAppearanceOf" : {
+      "@id" : "http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isFirstAppearanceOf",
+      "@type" : "@id"
+    },
+    "Cat" : {
+      "@id" : "http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Cat"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "isBrother" : {
+      "@id" : "http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isBrother",
+      "@type" : "@id"
+    },
+    "Alien" : {
+      "@id" : "http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Alien"
+    }
+  }
+}
