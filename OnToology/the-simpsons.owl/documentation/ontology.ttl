@@ -1,0 +1,774 @@
+@prefix : <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#> .
+
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons> rdf:type owl:Ontology ;
+                                                                       <http://purl.org/dc/terms/license> "http://purl.org/NET/rdflicense/cc-by4.0" ;
+                                                                       rdfs:comment """Name: 
+the-simpsons.owl
+
+Description: 
+The Simpsons ontology describes the characters their relationships in \"The 
+Simpsons\" cartoon series. 
+
+Author:
+Patxi Díaz.""" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/terms
+<http://purl.org/dc/terms/terms> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2003/11/swrl#AtomList
+<http://www.w3.org/2003/11/swrl#AtomList> rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2003/11/swrl#ClassAtom
+<http://www.w3.org/2003/11/swrl#ClassAtom> rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2003/11/swrl#Imp
+<http://www.w3.org/2003/11/swrl#Imp> rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2003/11/swrl#IndividualPropertyAtom
+<http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2003/11/swrl#Variable
+<http://www.w3.org/2003/11/swrl#Variable> rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasBrother
+:hasBrother rdf:type owl:ObjectProperty ;
+            owl:inverseOf :isBrother ;
+            rdfs:domain :Character ;
+            rdfs:range :Character ;
+            rdfs:comment "A character has a brother if he/she has a sibling and the sibling is a male" ;
+            rdfs:label "hasBrother" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasDirector
+:hasDirector rdf:type owl:ObjectProperty ;
+             owl:inverseOf :isDirectorOf ;
+             rdf:type owl:AsymmetricProperty ;
+             rdfs:domain :Episode ;
+             rdfs:range :Person ;
+             rdfs:comment "An episode has a director" ;
+             rdfs:label "hasDirector" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasFirstAppearanceIn
+:hasFirstAppearanceIn rdf:type owl:ObjectProperty ;
+                      owl:inverseOf :isFirstAppearanceOf ;
+                      rdf:type owl:FunctionalProperty ;
+                      rdfs:domain :Character ;
+                      rdfs:range :Episode ;
+                      rdfs:comment "A character have a first episode apperance" ;
+                      rdfs:label "hasFirstAppearanceIn" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasMember
+:hasMember rdf:type owl:ObjectProperty ;
+           owl:inverseOf :isMemberOfFamily ;
+           rdf:type owl:AsymmetricProperty ;
+           rdfs:domain :Family ;
+           rdfs:range :Character ;
+           rdfs:comment "A family is formed by characters (membes)" ;
+           rdfs:label "hasMember" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasSibling
+:hasSibling rdf:type owl:ObjectProperty ,
+                     owl:SymmetricProperty ,
+                     owl:IrreflexiveProperty ;
+            rdfs:domain :Character ;
+            rdfs:range :Character ;
+            rdfs:comment "A character can has a sibling" ;
+            rdfs:label "hasSibling" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasSister
+:hasSister rdf:type owl:ObjectProperty ;
+           owl:inverseOf :isSister ;
+           rdfs:domain :Character ;
+           rdfs:range :Character ;
+           rdfs:comment "A character has a sister if he/she has a sibling and the sibling is a female" ;
+           rdfs:label "hasSister" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasVoiceActor
+:hasVoiceActor rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               owl:inverseOf :isVoiceActorOf ;
+               rdfs:domain :Character ;
+               rdfs:range :Person ;
+               rdfs:comment "A character can have a voice actor" ;
+               rdfs:label "hasVoiceActor" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasWriter
+:hasWriter rdf:type owl:ObjectProperty ;
+           owl:inverseOf :isWriterOf ;
+           rdf:type owl:AsymmetricProperty ;
+           rdfs:domain :Episode ;
+           rdfs:range :Person ;
+           rdfs:comment "An episode has a writer" ;
+           rdfs:label "hasWriter" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isBrother
+:isBrother rdf:type owl:ObjectProperty ;
+           rdfs:domain :Character ;
+           rdfs:range :Character ;
+           rdfs:comment "A character is brother of anocher character if they are siblings and he is a male" ;
+           rdfs:label "isBrother" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isChild
+:isChild rdf:type owl:ObjectProperty ;
+         owl:inverseOf :isFather ;
+         rdfs:domain :Character ;
+         rdfs:range :Character ;
+         rdfs:comment "A character is child of another character" ;
+         rdfs:label "isChild" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isDirectorOf
+:isDirectorOf rdf:type owl:ObjectProperty ,
+                       owl:AsymmetricProperty ;
+              rdfs:domain :Person ;
+              rdfs:range :Episode ;
+              rdfs:comment "A person is the director of an episode" ;
+              rdfs:label "isDirectorOf" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isFather
+:isFather rdf:type owl:ObjectProperty ,
+                   owl:AsymmetricProperty ;
+          rdfs:domain :Character ;
+          rdfs:range :Character ;
+          rdfs:comment "a character is father of another character" ;
+          rdfs:label "isFather" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isFirstAppearanceOf
+:isFirstAppearanceOf rdf:type owl:ObjectProperty ,
+                              owl:AsymmetricProperty ;
+                     rdfs:domain :Episode ;
+                     rdfs:range :Character ;
+                     rdfs:comment "A character appears in one or several episodes" ;
+                     rdfs:label "isFirstAppearanceOf" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isGrandChild
+:isGrandChild rdf:type owl:ObjectProperty ;
+              owl:inverseOf :isGrandFather ;
+              rdfs:domain :Character ;
+              rdfs:range :Character ;
+              rdfs:comment "A character is the grandchild of another character" ;
+              rdfs:label "isGrandChild" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isGrandFather
+:isGrandFather rdf:type owl:ObjectProperty ,
+                        owl:AsymmetricProperty ;
+               rdfs:domain :Character ;
+               rdfs:range :Character ;
+               rdfs:comment "a character is granfather of another character" ;
+               rdfs:label "isGrandFather" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isMemberOfFamily
+:isMemberOfFamily rdf:type owl:ObjectProperty ,
+                           owl:AsymmetricProperty ;
+                  rdfs:domain :Character ;
+                  rdfs:range :Family ;
+                  rdfs:comment "A character is member of a family" ;
+                  rdfs:label "isMemberOfFamily" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isSister
+:isSister rdf:type owl:ObjectProperty ;
+          rdfs:domain :Character ;
+          rdfs:range :Character ;
+          rdfs:comment "A character is sister of anocher character if they are siblings and she is a female" ;
+          rdfs:label "isSister" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isVoiceActorOf
+:isVoiceActorOf rdf:type owl:ObjectProperty ,
+                         owl:AsymmetricProperty ;
+                rdfs:domain :Person ;
+                rdfs:range :Character ;
+                rdfs:comment "A person is voice actor of a character" ;
+                rdfs:label "isVoiceActorOf" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isWriterOf
+:isWriterOf rdf:type owl:ObjectProperty ,
+                     owl:AsymmetricProperty ;
+            rdfs:domain :Person ;
+            rdfs:range :Episode ;
+            rdfs:comment "A person is the writer of an episode" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasAge
+:hasAge rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Character ;
+        rdfs:range xsd:integer ;
+        rdfs:comment "Age of a character in the series" ;
+        rdfs:label "hasAge" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasHeight
+:hasHeight rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Character ;
+           rdfs:range xsd:integer ;
+           rdfs:comment "Height of a character in the series" ;
+           rdfs:label "hasHeight" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#AdultMan
+:AdultMan rdf:type owl:Class ;
+          rdfs:subClassOf :Male ;
+          rdfs:comment "Man character" ;
+          rdfs:label "AdultMan" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#AdultWoman
+:AdultWoman rdf:type owl:Class ;
+            rdfs:subClassOf :Female ;
+            rdfs:comment "Woman character" ;
+            rdfs:label "AdultWoman" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Alien
+:Alien rdf:type owl:Class ;
+       rdfs:subClassOf :Character ;
+       owl:disjointWith :Animal ,
+                        :Human ;
+       rdfs:comment "Alien character" ;
+       rdfs:label "Alien" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Animal
+:Animal rdf:type owl:Class ;
+        rdfs:subClassOf :Character ;
+        owl:disjointWith :Human ;
+        rdfs:comment "Animal character" ;
+        rdfs:label "Animal" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Boy
+:Boy rdf:type owl:Class ;
+     rdfs:subClassOf :Male ;
+     rdfs:comment "Boy character" ;
+     rdfs:label "Boy" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Cat
+:Cat rdf:type owl:Class ;
+     rdfs:subClassOf :Animal ;
+     rdfs:comment "Cat characters of the series" ;
+     rdfs:label "Cat" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Character
+:Character rdf:type owl:Class ;
+           rdfs:comment "Series character." ;
+           rdfs:label "Character" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Director
+:Director rdf:type owl:Class ;
+          rdfs:subClassOf :Person ;
+          rdfs:label "Director" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Dog
+:Dog rdf:type owl:Class ;
+     rdfs:subClassOf :Animal ;
+     rdfs:comment "Dog character of the series" ;
+     rdfs:label "Dog" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Episode
+:Episode rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasDirector ;
+                           owl:allValuesFrom :Director
+                         ] ;
+         rdfs:comment "An episode of the series" ;
+         rdfs:label "Episode" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Family
+:Family rdf:type owl:Class ;
+        rdfs:comment "Family of the characters" ;
+        rdfs:label "Family" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Female
+:Female rdf:type owl:Class ;
+        rdfs:subClassOf :Human ;
+        owl:disjointWith :Male ;
+        rdfs:comment "Female human character" ;
+        rdfs:label "Female" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Fish
+:Fish rdf:type owl:Class ;
+      rdfs:subClassOf :Animal ;
+      rdfs:comment "Fish character of the series" ;
+      rdfs:label "Fish" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Girl
+:Girl rdf:type owl:Class ;
+      rdfs:subClassOf :Female ;
+      rdfs:comment "Girl character" ;
+      rdfs:label "Girl" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Human
+:Human rdf:type owl:Class ;
+       rdfs:subClassOf :Character ;
+       rdfs:comment "Human series character" ;
+       rdfs:label "Human" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Male
+:Male rdf:type owl:Class ;
+      rdfs:subClassOf :Human ;
+      rdfs:comment "Male human character" ;
+      rdfs:label "Male" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#OldMan
+:OldMan rdf:type owl:Class ;
+        rdfs:subClassOf :Male ;
+        rdfs:comment "Old man character" ;
+        rdfs:label "OldMan" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#OldWoman
+:OldWoman rdf:type owl:Class ;
+          rdfs:subClassOf :Female ;
+          rdfs:comment "Old woman character" ;
+          rdfs:label "OldWoman" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Person
+:Person rdf:type owl:Class ;
+        rdfs:comment "Person that participates in the series" ;
+        rdfs:label "Person" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#VoiceActor
+:VoiceActor rdf:type owl:Class ;
+            rdfs:subClassOf :Person ;
+            rdfs:label "VoiceActor" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Writer
+:Writer rdf:type owl:Class ;
+        rdfs:subClassOf :Person ;
+        rdfs:label "Writer" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#AbrahamSimpson
+:AbrahamSimpson rdf:type owl:NamedIndividual ,
+                         :OldMan ;
+                :isFather :HomerSimpson ;
+                :isMemberOfFamily :Simpson ;
+                rdfs:comment "Also known as Grampa, he is the paternal grandfather of Bart, Lisa and Maggie Simpson" ;
+                rdfs:sameAs "https://dbpedia.org/page/Grampa_Simpson" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#ApuNahasapeemapetilon
+:ApuNahasapeemapetilon rdf:type owl:NamedIndividual ,
+                                :AdultMan ;
+                       rdfs:comment "He is an Indian immigrant proprietor who runs the Kwik-E-Mart, a popular convenience store in Springfield" ;
+                       rdfs:sameAs "https://dbpedia.org/page/Apu_Nahasapeemapetilon" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#BarneyGumble
+:BarneyGumble rdf:type owl:NamedIndividual ,
+                       :AdultMan ;
+              rdfs:comment "Barney is the town drunk of Springfield and one of Homer Simpson's friends" ;
+              rdfs:sameAs "https://dbpedia.org/page/Barney_Gumble" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#BartSimpson
+:BartSimpson rdf:type owl:NamedIndividual ,
+                      :Boy ;
+             :hasFirstAppearanceIn :EpisodeS1E1 ;
+             :hasSibling :LisaSimpson ,
+                         :MaggieSimpson ;
+             :isMemberOfFamily :Simpson ;
+             rdfs:comment "Bart is the eldest child and only son of Homer and Marge" ;
+             rdfs:sameAs "https://dbpedia.org/page/Bart_Simpson" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Blinky
+:Blinky rdf:type owl:NamedIndividual ,
+                 :Fish ;
+        rdfs:comment "Is a three-eyed orange fish species, found in the ponds and lakes outside the nuclear power plant" ;
+        rdfs:label "Blinky" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#DanCastellaneta
+:DanCastellaneta rdf:type owl:NamedIndividual ,
+                          :Person ;
+                 :isVoiceActorOf :AbrahamSimpson ,
+                                 :BarneyGumble ,
+                                 :HomerSimpson ,
+                                 :SantasLittleHelper ,
+                                 :Snowball_I ,
+                                 :Snowball_II ,
+                                 :Snowball_III ,
+                                 :Snowball_IV ,
+                                 :Snowball_V ;
+                 rdfs:comment "Is an American actor, comedian and screenwriter" ;
+                 rdfs:sameAs "https://dbpedia.org/page/Dan_Castellaneta" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#DavidSilverman
+:DavidSilverman rdf:type owl:NamedIndividual ,
+                         :Person ;
+                :isDirectorOf :EpisodeS1E1 ,
+                              :EpisodeS1E2 .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#EpisodeS1E1
+:EpisodeS1E1 rdf:type owl:NamedIndividual ,
+                      :Episode .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#EpisodeS1E2
+:EpisodeS1E2 rdf:type owl:NamedIndividual ,
+                      :Episode .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#HankAzaria
+:HankAzaria rdf:type owl:NamedIndividual ,
+                     :Person ;
+            :isVoiceActorOf :ApuNahasapeemapetilon ;
+            rdfs:comment "Is an American actor, comedian and producer." ;
+            rdfs:sameAs "https://dbpedia.org/page/Hank_Azaria" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#HomerSimpson
+:HomerSimpson rdf:type owl:NamedIndividual ,
+                       :AdultMan ;
+              :hasFirstAppearanceIn :EpisodeS1E1 ;
+              :isFather :BartSimpson ,
+                        :LisaSimpson ,
+                        :MaggieSimpson ;
+              :isMemberOfFamily :Simpson ;
+              :hasAge 38 ;
+              rdfs:comment "Homer Jay Simpson is one of the main characters. He's one of the most influential characters in the history of television." ;
+              rdfs:sameAs "https://dbpedia.org/page/Homer_Simpson" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#JulieKavner
+:JulieKavner rdf:type owl:NamedIndividual ,
+                      :Person ;
+             :isVoiceActorOf :MargeSimpson ;
+             rdfs:comment "Is an American actress" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Kang
+:Kang rdf:type owl:NamedIndividual ,
+               :Alien ;
+      rdfs:sameAs "He is a Rigellian from Rigel 7" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Kodos
+:Kodos rdf:type owl:NamedIndividual ,
+                :Alien ;
+       rdfs:sameAs "She is a Rigellian from Rigel" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#LisaSimpson
+:LisaSimpson rdf:type owl:NamedIndividual ,
+                      :Girl ;
+             :hasFirstAppearanceIn :EpisodeS1E1 ;
+             :hasSibling :MaggieSimpson ;
+             :isMemberOfFamily :Simpson ;
+             :hasAge 8 ;
+             rdfs:comment "She is the middle child and most accomplished of the Simpson family." ;
+             rdfs:sameAs "https://dbpedia.org/page/Lisa_Simpson" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#MaggieSimpson
+:MaggieSimpson rdf:type owl:NamedIndividual ,
+                        :Girl ;
+               :hasFirstAppearanceIn :EpisodeS1E1 ;
+               :isMemberOfFamily :Simpson ;
+               rdfs:comment "Maggie is the youngest child of Homer and Marge" ;
+               rdfs:sameAs "https://dbpedia.org/page/Maggie_Simpson" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#MargeSimpson
+:MargeSimpson rdf:type owl:NamedIndividual ,
+                       :AdultWoman ;
+              :hasFirstAppearanceIn :EpisodeS1E1 ;
+              :isMemberOfFamily :Simpson ;
+              rdfs:comment "Marge is the matriarch of the Simpson family" ;
+              rdfs:sameAs "https://dbpedia.org/page/Marge_Simpson" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#MimiPond
+:MimiPond rdf:type owl:NamedIndividual ;
+          :isWriterOf :EpisodeS1E1 .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#NancyCartwright
+:NancyCartwright rdf:type owl:NamedIndividual ,
+                          :Person ;
+                 :isVoiceActorOf :BartSimpson ,
+                                 :MaggieSimpson ;
+                 rdfs:comment "Is an American actress" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#SantasLittleHelper
+:SantasLittleHelper rdf:type owl:NamedIndividual ,
+                             :Dog ;
+                    :hasFirstAppearanceIn :EpisodeS1E1 ;
+                    rdfs:comment "He is the pet greyhound of the Simpson family" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Simpson
+:Simpson rdf:type owl:NamedIndividual ,
+                  :Family .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Snowball_I
+:Snowball_I rdf:type owl:NamedIndividual ,
+                     :Cat ;
+            rdfs:comment "Was the first cat owned by Lisa" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Snowball_II
+:Snowball_II rdf:type owl:NamedIndividual ,
+                      :Cat ;
+             rdfs:comment "Is the Simpson family's second cat" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Snowball_III
+:Snowball_III rdf:type owl:NamedIndividual ,
+                       :Cat ;
+              rdfs:comment "Was the third cat owned by the Simpson family." .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Snowball_IV
+:Snowball_IV rdf:type owl:NamedIndividual ,
+                      :Cat ;
+             rdfs:comment "was the fourth cat owned by the Simpson family." .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Snowball_V
+:Snowball_V rdf:type owl:NamedIndividual ,
+                     :Cat ;
+            rdfs:comment "Snowball V, also referred to as Snowball II, is the Simpsons' fifth cat and looks exactly like the original Snowball II, who died when a truck hit her" .
+
+
+###  http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#YeardleySmith
+:YeardleySmith rdf:type owl:NamedIndividual ,
+                        :Person ;
+               :isVoiceActorOf :LisaSimpson ;
+               rdfs:comment "Is an American actress, artist and writer" .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl:var#c> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#s> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#p> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#e> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#F> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#S> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#G> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Character ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasSibling ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :Male ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasBrother ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Character ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasSibling ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :Female ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasSister ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Person ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :isVoiceActorOf ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#c>
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :VoiceActor ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Person ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :isWriterOf ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#e>
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Writer ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :isFather ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#F> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#S>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :isFather ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#G> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#F>
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :isGrandFather ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#G> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#S>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
