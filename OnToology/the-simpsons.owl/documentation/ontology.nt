@@ -1,0 +1,698 @@
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons> <http://purl.org/dc/terms/license> "http://purl.org/NET/rdflicense/cc-by4.0" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons> <http://www.w3.org/2000/01/rdf-schema#comment> "Name: \nthe-simpsons.owl\n\nDescription: \nThe Simpsons ontology describes the characters their relationships in \"The \nSimpsons\" cartoon series. \n\nAuthor:\nPatxi Díaz." .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/terms
+<http://purl.org/dc/terms/terms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2003/11/swrl#AtomList
+<http://www.w3.org/2003/11/swrl#AtomList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2003/11/swrl#ClassAtom
+<http://www.w3.org/2003/11/swrl#ClassAtom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2003/11/swrl#Imp
+<http://www.w3.org/2003/11/swrl#Imp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2003/11/swrl#IndividualPropertyAtom
+<http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2003/11/swrl#Variable
+<http://www.w3.org/2003/11/swrl#Variable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasBrother
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasBrother> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasBrother> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isBrother> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasBrother> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Character> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasBrother> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Character> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasBrother> <http://www.w3.org/2000/01/rdf-schema#comment> "A character has a brother if he/she has a sibling and the sibling is a male" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasBrother> <http://www.w3.org/2000/01/rdf-schema#label> "hasBrother" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasDirector
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasDirector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasDirector> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isDirectorOf> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasDirector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasDirector> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Episode> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasDirector> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Person> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasDirector> <http://www.w3.org/2000/01/rdf-schema#comment> "An episode has a director" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasDirector> <http://www.w3.org/2000/01/rdf-schema#label> "hasDirector" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasFirstAppearanceIn
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasFirstAppearanceIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasFirstAppearanceIn> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isFirstAppearanceOf> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasFirstAppearanceIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasFirstAppearanceIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Character> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasFirstAppearanceIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Episode> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasFirstAppearanceIn> <http://www.w3.org/2000/01/rdf-schema#comment> "A character have a first episode apperance" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasFirstAppearanceIn> <http://www.w3.org/2000/01/rdf-schema#label> "hasFirstAppearanceIn" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasMember
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasMember> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isMemberOfFamily> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasMember> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Family> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasMember> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Character> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasMember> <http://www.w3.org/2000/01/rdf-schema#comment> "A family is formed by characters (membes)" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasMember> <http://www.w3.org/2000/01/rdf-schema#label> "hasMember" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasSibling
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasSibling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasSibling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasSibling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasSibling> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Character> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasSibling> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Character> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasSibling> <http://www.w3.org/2000/01/rdf-schema#comment> "A character can has a sibling" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasSibling> <http://www.w3.org/2000/01/rdf-schema#label> "hasSibling" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasSister
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasSister> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasSister> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isSister> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasSister> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Character> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasSister> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Character> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasSister> <http://www.w3.org/2000/01/rdf-schema#comment> "A character has a sister if he/she has a sibling and the sibling is a female" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasSister> <http://www.w3.org/2000/01/rdf-schema#label> "hasSister" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasVoiceActor
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasVoiceActor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasVoiceActor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasVoiceActor> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isVoiceActorOf> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasVoiceActor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Character> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasVoiceActor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Person> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasVoiceActor> <http://www.w3.org/2000/01/rdf-schema#comment> "A character can have a voice actor" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasVoiceActor> <http://www.w3.org/2000/01/rdf-schema#label> "hasVoiceActor" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasWriter
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasWriter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasWriter> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isWriterOf> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasWriter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasWriter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Episode> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasWriter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Person> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasWriter> <http://www.w3.org/2000/01/rdf-schema#comment> "An episode has a writer" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasWriter> <http://www.w3.org/2000/01/rdf-schema#label> "hasWriter" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isBrother
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isBrother> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isBrother> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Character> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isBrother> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Character> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isBrother> <http://www.w3.org/2000/01/rdf-schema#comment> "A character is brother of anocher character if they are siblings and he is a male" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isBrother> <http://www.w3.org/2000/01/rdf-schema#label> "isBrother" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isChild
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isChild> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isChild> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isFather> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isChild> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Character> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isChild> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Character> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isChild> <http://www.w3.org/2000/01/rdf-schema#comment> "A character is child of another character" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isChild> <http://www.w3.org/2000/01/rdf-schema#label> "isChild" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isDirectorOf
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isDirectorOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isDirectorOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isDirectorOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Person> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isDirectorOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Episode> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isDirectorOf> <http://www.w3.org/2000/01/rdf-schema#comment> "A person is the director of an episode" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isDirectorOf> <http://www.w3.org/2000/01/rdf-schema#label> "isDirectorOf" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isFather
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isFather> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isFather> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isFather> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Character> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isFather> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Character> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isFather> <http://www.w3.org/2000/01/rdf-schema#comment> "a character is father of another character" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isFather> <http://www.w3.org/2000/01/rdf-schema#label> "isFather" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isFirstAppearanceOf
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isFirstAppearanceOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isFirstAppearanceOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isFirstAppearanceOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Episode> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isFirstAppearanceOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Character> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isFirstAppearanceOf> <http://www.w3.org/2000/01/rdf-schema#comment> "A character appears in one or several episodes" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isFirstAppearanceOf> <http://www.w3.org/2000/01/rdf-schema#label> "isFirstAppearanceOf" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isGrandChild
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isGrandChild> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isGrandChild> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isGrandFather> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isGrandChild> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Character> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isGrandChild> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Character> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isGrandChild> <http://www.w3.org/2000/01/rdf-schema#comment> "A character is the grandchild of another character" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isGrandChild> <http://www.w3.org/2000/01/rdf-schema#label> "isGrandChild" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isGrandFather
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isGrandFather> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isGrandFather> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isGrandFather> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Character> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isGrandFather> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Character> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isGrandFather> <http://www.w3.org/2000/01/rdf-schema#comment> "a character is granfather of another character" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isGrandFather> <http://www.w3.org/2000/01/rdf-schema#label> "isGrandFather" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isMemberOfFamily
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isMemberOfFamily> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isMemberOfFamily> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isMemberOfFamily> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Character> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isMemberOfFamily> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Family> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isMemberOfFamily> <http://www.w3.org/2000/01/rdf-schema#comment> "A character is member of a family" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isMemberOfFamily> <http://www.w3.org/2000/01/rdf-schema#label> "isMemberOfFamily" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isSister
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isSister> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isSister> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Character> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isSister> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Character> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isSister> <http://www.w3.org/2000/01/rdf-schema#comment> "A character is sister of anocher character if they are siblings and she is a female" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isSister> <http://www.w3.org/2000/01/rdf-schema#label> "isSister" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isVoiceActorOf
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isVoiceActorOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isVoiceActorOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isVoiceActorOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Person> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isVoiceActorOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Character> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isVoiceActorOf> <http://www.w3.org/2000/01/rdf-schema#comment> "A person is voice actor of a character" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isVoiceActorOf> <http://www.w3.org/2000/01/rdf-schema#label> "isVoiceActorOf" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isWriterOf
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isWriterOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isWriterOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isWriterOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Person> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isWriterOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Episode> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isWriterOf> <http://www.w3.org/2000/01/rdf-schema#comment> "A person is the writer of an episode" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasAge
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasAge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasAge> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Character> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasAge> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasAge> <http://www.w3.org/2000/01/rdf-schema#comment> "Age of a character in the series" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasAge> <http://www.w3.org/2000/01/rdf-schema#label> "hasAge" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasHeight
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasHeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasHeight> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Character> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasHeight> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasHeight> <http://www.w3.org/2000/01/rdf-schema#comment> "Height of a character in the series" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasHeight> <http://www.w3.org/2000/01/rdf-schema#label> "hasHeight" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#AdultMan
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#AdultMan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#AdultMan> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Male> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#AdultMan> <http://www.w3.org/2000/01/rdf-schema#comment> "Man character" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#AdultMan> <http://www.w3.org/2000/01/rdf-schema#label> "AdultMan" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#AdultWoman
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#AdultWoman> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#AdultWoman> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Female> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#AdultWoman> <http://www.w3.org/2000/01/rdf-schema#comment> "Woman character" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#AdultWoman> <http://www.w3.org/2000/01/rdf-schema#label> "AdultWoman" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Alien
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Alien> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Alien> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Character> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Alien> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Animal> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Alien> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Human> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Alien> <http://www.w3.org/2000/01/rdf-schema#comment> "Alien character" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Alien> <http://www.w3.org/2000/01/rdf-schema#label> "Alien" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Animal
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Animal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Animal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Character> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Animal> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Human> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Animal> <http://www.w3.org/2000/01/rdf-schema#comment> "Animal character" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Animal> <http://www.w3.org/2000/01/rdf-schema#label> "Animal" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Boy
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Boy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Boy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Male> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Boy> <http://www.w3.org/2000/01/rdf-schema#comment> "Boy character" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Boy> <http://www.w3.org/2000/01/rdf-schema#label> "Boy" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Cat
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Cat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Cat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Animal> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Cat> <http://www.w3.org/2000/01/rdf-schema#comment> "Cat characters of the series" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Cat> <http://www.w3.org/2000/01/rdf-schema#label> "Cat" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Character
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Character> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Character> <http://www.w3.org/2000/01/rdf-schema#comment> "Series character." .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Character> <http://www.w3.org/2000/01/rdf-schema#label> "Character" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Director
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Director> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Director> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Person> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Director> <http://www.w3.org/2000/01/rdf-schema#label> "Director" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Dog
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Dog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Dog> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Animal> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Dog> <http://www.w3.org/2000/01/rdf-schema#comment> "Dog character of the series" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Dog> <http://www.w3.org/2000/01/rdf-schema#label> "Dog" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Episode
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Episode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Episode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Director> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasDirector> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Episode> <http://www.w3.org/2000/01/rdf-schema#comment> "An episode of the series" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Episode> <http://www.w3.org/2000/01/rdf-schema#label> "Episode" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Family
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Family> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Family> <http://www.w3.org/2000/01/rdf-schema#comment> "Family of the characters" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Family> <http://www.w3.org/2000/01/rdf-schema#label> "Family" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Female
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Female> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Female> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Human> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Female> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Male> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Female> <http://www.w3.org/2000/01/rdf-schema#comment> "Female human character" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Female> <http://www.w3.org/2000/01/rdf-schema#label> "Female" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Fish
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Fish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Fish> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Animal> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Fish> <http://www.w3.org/2000/01/rdf-schema#comment> "Fish character of the series" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Fish> <http://www.w3.org/2000/01/rdf-schema#label> "Fish" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Girl
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Girl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Girl> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Female> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Girl> <http://www.w3.org/2000/01/rdf-schema#comment> "Girl character" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Girl> <http://www.w3.org/2000/01/rdf-schema#label> "Girl" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Human
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Human> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Human> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Character> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Human> <http://www.w3.org/2000/01/rdf-schema#comment> "Human series character" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Human> <http://www.w3.org/2000/01/rdf-schema#label> "Human" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Male
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Male> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Male> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Human> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Male> <http://www.w3.org/2000/01/rdf-schema#comment> "Male human character" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Male> <http://www.w3.org/2000/01/rdf-schema#label> "Male" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#OldMan
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#OldMan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#OldMan> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Male> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#OldMan> <http://www.w3.org/2000/01/rdf-schema#comment> "Old man character" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#OldMan> <http://www.w3.org/2000/01/rdf-schema#label> "OldMan" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#OldWoman
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#OldWoman> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#OldWoman> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Female> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#OldWoman> <http://www.w3.org/2000/01/rdf-schema#comment> "Old woman character" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#OldWoman> <http://www.w3.org/2000/01/rdf-schema#label> "OldWoman" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Person
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "Person that participates in the series" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#VoiceActor
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#VoiceActor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#VoiceActor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Person> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#VoiceActor> <http://www.w3.org/2000/01/rdf-schema#label> "VoiceActor" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Writer
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Writer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Writer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Person> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Writer> <http://www.w3.org/2000/01/rdf-schema#label> "Writer" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#AbrahamSimpson
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#AbrahamSimpson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#AbrahamSimpson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#OldMan> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#AbrahamSimpson> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isFather> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#HomerSimpson> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#AbrahamSimpson> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isMemberOfFamily> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Simpson> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#AbrahamSimpson> <http://www.w3.org/2000/01/rdf-schema#comment> "Also known as Grampa, he is the paternal grandfather of Bart, Lisa and Maggie Simpson" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#AbrahamSimpson> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Grampa_Simpson" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#ApuNahasapeemapetilon
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#ApuNahasapeemapetilon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#ApuNahasapeemapetilon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#AdultMan> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#ApuNahasapeemapetilon> <http://www.w3.org/2000/01/rdf-schema#comment> "He is an Indian immigrant proprietor who runs the Kwik-E-Mart, a popular convenience store in Springfield" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#ApuNahasapeemapetilon> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Apu_Nahasapeemapetilon" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#BarneyGumble
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#BarneyGumble> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#BarneyGumble> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#AdultMan> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#BarneyGumble> <http://www.w3.org/2000/01/rdf-schema#comment> "Barney is the town drunk of Springfield and one of Homer Simpson's friends" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#BarneyGumble> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Barney_Gumble" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#BartSimpson
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#BartSimpson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#BartSimpson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Boy> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#BartSimpson> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasFirstAppearanceIn> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#EpisodeS1E1> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#BartSimpson> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasSibling> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#LisaSimpson> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#BartSimpson> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasSibling> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#MaggieSimpson> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#BartSimpson> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isMemberOfFamily> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Simpson> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#BartSimpson> <http://www.w3.org/2000/01/rdf-schema#comment> "Bart is the eldest child and only son of Homer and Marge" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#BartSimpson> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Bart_Simpson" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Blinky
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Blinky> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Blinky> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Fish> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Blinky> <http://www.w3.org/2000/01/rdf-schema#comment> "Is a three-eyed orange fish species, found in the ponds and lakes outside the nuclear power plant" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Blinky> <http://www.w3.org/2000/01/rdf-schema#label> "Blinky" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#DanCastellaneta
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#DanCastellaneta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#DanCastellaneta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Person> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#DanCastellaneta> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isVoiceActorOf> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#AbrahamSimpson> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#DanCastellaneta> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isVoiceActorOf> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#BarneyGumble> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#DanCastellaneta> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isVoiceActorOf> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#HomerSimpson> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#DanCastellaneta> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isVoiceActorOf> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#SantasLittleHelper> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#DanCastellaneta> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isVoiceActorOf> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Snowball_I> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#DanCastellaneta> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isVoiceActorOf> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Snowball_II> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#DanCastellaneta> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isVoiceActorOf> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Snowball_III> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#DanCastellaneta> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isVoiceActorOf> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Snowball_IV> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#DanCastellaneta> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isVoiceActorOf> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Snowball_V> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#DanCastellaneta> <http://www.w3.org/2000/01/rdf-schema#comment> "Is an American actor, comedian and screenwriter" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#DanCastellaneta> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Dan_Castellaneta" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#DavidSilverman
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#DavidSilverman> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#DavidSilverman> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Person> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#DavidSilverman> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isDirectorOf> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#EpisodeS1E1> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#DavidSilverman> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isDirectorOf> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#EpisodeS1E2> .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#EpisodeS1E1
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#EpisodeS1E1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#EpisodeS1E1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Episode> .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#EpisodeS1E2
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#EpisodeS1E2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#EpisodeS1E2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Episode> .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#HankAzaria
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#HankAzaria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#HankAzaria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Person> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#HankAzaria> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isVoiceActorOf> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#ApuNahasapeemapetilon> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#HankAzaria> <http://www.w3.org/2000/01/rdf-schema#comment> "Is an American actor, comedian and producer." .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#HankAzaria> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Hank_Azaria" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#HomerSimpson
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#HomerSimpson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#HomerSimpson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#AdultMan> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#HomerSimpson> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasFirstAppearanceIn> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#EpisodeS1E1> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#HomerSimpson> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isFather> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#BartSimpson> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#HomerSimpson> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isFather> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#LisaSimpson> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#HomerSimpson> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isFather> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#MaggieSimpson> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#HomerSimpson> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isMemberOfFamily> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Simpson> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#HomerSimpson> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasAge> "38"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#HomerSimpson> <http://www.w3.org/2000/01/rdf-schema#comment> "Homer Jay Simpson is one of the main characters. He's one of the most influential characters in the history of television." .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#HomerSimpson> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Homer_Simpson" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#JulieKavner
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#JulieKavner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#JulieKavner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Person> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#JulieKavner> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isVoiceActorOf> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#MargeSimpson> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#JulieKavner> <http://www.w3.org/2000/01/rdf-schema#comment> "Is an American actress" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Kang
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Kang> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Kang> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Alien> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Kang> <http://www.w3.org/2000/01/rdf-schema#sameAs> "He is a Rigellian from Rigel 7" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Kodos
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Kodos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Kodos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Alien> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Kodos> <http://www.w3.org/2000/01/rdf-schema#sameAs> "She is a Rigellian from Rigel" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#LisaSimpson
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#LisaSimpson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#LisaSimpson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Girl> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#LisaSimpson> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasFirstAppearanceIn> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#EpisodeS1E1> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#LisaSimpson> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasSibling> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#MaggieSimpson> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#LisaSimpson> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isMemberOfFamily> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Simpson> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#LisaSimpson> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasAge> "8"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#LisaSimpson> <http://www.w3.org/2000/01/rdf-schema#comment> "She is the middle child and most accomplished of the Simpson family." .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#LisaSimpson> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Lisa_Simpson" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#MaggieSimpson
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#MaggieSimpson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#MaggieSimpson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Girl> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#MaggieSimpson> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasFirstAppearanceIn> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#EpisodeS1E1> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#MaggieSimpson> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isMemberOfFamily> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Simpson> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#MaggieSimpson> <http://www.w3.org/2000/01/rdf-schema#comment> "Maggie is the youngest child of Homer and Marge" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#MaggieSimpson> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Maggie_Simpson" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#MargeSimpson
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#MargeSimpson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#MargeSimpson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#AdultWoman> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#MargeSimpson> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasFirstAppearanceIn> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#EpisodeS1E1> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#MargeSimpson> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isMemberOfFamily> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Simpson> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#MargeSimpson> <http://www.w3.org/2000/01/rdf-schema#comment> "Marge is the matriarch of the Simpson family" .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#MargeSimpson> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Marge_Simpson" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#MimiPond
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#MimiPond> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#MimiPond> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isWriterOf> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#EpisodeS1E1> .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#NancyCartwright
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#NancyCartwright> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#NancyCartwright> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Person> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#NancyCartwright> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isVoiceActorOf> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#BartSimpson> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#NancyCartwright> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isVoiceActorOf> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#MaggieSimpson> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#NancyCartwright> <http://www.w3.org/2000/01/rdf-schema#comment> "Is an American actress" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#SantasLittleHelper
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#SantasLittleHelper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#SantasLittleHelper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Dog> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#SantasLittleHelper> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasFirstAppearanceIn> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#EpisodeS1E1> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#SantasLittleHelper> <http://www.w3.org/2000/01/rdf-schema#comment> "He is the pet greyhound of the Simpson family" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Simpson
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Simpson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Simpson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Family> .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Snowball_I
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Snowball_I> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Snowball_I> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Cat> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Snowball_I> <http://www.w3.org/2000/01/rdf-schema#comment> "Was the first cat owned by Lisa" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Snowball_II
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Snowball_II> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Snowball_II> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Cat> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Snowball_II> <http://www.w3.org/2000/01/rdf-schema#comment> "Is the Simpson family's second cat" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Snowball_III
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Snowball_III> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Snowball_III> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Cat> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Snowball_III> <http://www.w3.org/2000/01/rdf-schema#comment> "Was the third cat owned by the Simpson family." .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Snowball_IV
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Snowball_IV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Snowball_IV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Cat> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Snowball_IV> <http://www.w3.org/2000/01/rdf-schema#comment> "was the fourth cat owned by the Simpson family." .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Snowball_V
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Snowball_V> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Snowball_V> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Cat> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Snowball_V> <http://www.w3.org/2000/01/rdf-schema#comment> "Snowball V, also referred to as Snowball II, is the Simpsons' fifth cat and looks exactly like the original Snowball II, who died when a truck hit her" .
+# 
+# http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#YeardleySmith
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#YeardleySmith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#YeardleySmith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Person> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#YeardleySmith> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isVoiceActorOf> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#LisaSimpson> .
+<http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#YeardleySmith> <http://www.w3.org/2000/01/rdf-schema#comment> "Is an American actress, artist and writer" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<urn:swrl:var#c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#s> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#p> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#F> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#S> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#G> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid11 <http://www.w3.org/2003/11/swrl#body> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid13 .
+_:genid13 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s> .
+_:genid13 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Male> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid15 .
+_:genid15 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s> .
+_:genid15 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid15 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasSibling> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid17 .
+_:genid17 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid17 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Character> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid11 <http://www.w3.org/2003/11/swrl#head> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid19 .
+_:genid19 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s> .
+_:genid19 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid19 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasBrother> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid2 <http://www.w3.org/2003/11/swrl#body> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid4 .
+_:genid4 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s> .
+_:genid4 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Female> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid6 .
+_:genid6 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s> .
+_:genid6 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid6 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasSibling> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid8 .
+_:genid8 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid8 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Character> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid2 <http://www.w3.org/2003/11/swrl#head> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid10 .
+_:genid10 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s> .
+_:genid10 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid10 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#hasSister> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid20 <http://www.w3.org/2003/11/swrl#body> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid22 .
+_:genid22 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#c> .
+_:genid22 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> .
+_:genid22 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isVoiceActorOf> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid24 .
+_:genid24 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> .
+_:genid24 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Person> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid20 <http://www.w3.org/2003/11/swrl#head> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid26 .
+_:genid26 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> .
+_:genid26 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#VoiceActor> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid27 <http://www.w3.org/2003/11/swrl#body> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid29 .
+_:genid29 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#e> .
+_:genid29 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> .
+_:genid29 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isWriterOf> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid31 .
+_:genid31 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> .
+_:genid31 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Person> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid27 <http://www.w3.org/2003/11/swrl#head> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid33 .
+_:genid33 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> .
+_:genid33 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#Writer> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid34 <http://www.w3.org/2003/11/swrl#body> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid36 .
+_:genid36 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#F> .
+_:genid36 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#G> .
+_:genid36 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isFather> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid38 .
+_:genid38 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#S> .
+_:genid38 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#F> .
+_:genid38 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isFather> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid34 <http://www.w3.org/2003/11/swrl#head> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid40 .
+_:genid40 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#S> .
+_:genid40 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#G> .
+_:genid40 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/patxidiaz/ontologies/2022/2/the-simpsons#isGrandFather> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
